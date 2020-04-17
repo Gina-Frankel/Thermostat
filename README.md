@@ -8,6 +8,8 @@ In this challenge, you will build the logic needed to model a simple thermostat.
 
 ### Challenge setup
 
+
+
 Specification:
 
 - Thermostat starts at 20 degrees
@@ -21,41 +23,42 @@ Specification:
 - You can ask about the thermostat's current energy usage: < 18 is `low-usage`, < 25 is `medium-usage`, anything else is `high-usage`.
 - (In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
 
-| thermostat       |
-| ---------------- |
-| attributes:      |
-| temperature  
-|power mode = 0n
-(change it to off )       |
-|                  |
-| FUNCTIONS:       |
-| up_temperature   |
-| down_temperature |
-| powermode_on     |
-| powermode_off    |
-|                  |
+| thermostat          |
+| ------------------- |
+| attributes:         |
+| start_temperature   |
+| power mode = 0n     |
+| temperature         |
+| (change it to off ) |
+|                     |
+| FUNCTIONS:          |
+| up_temperature      |
+| down_temperature    |
+| powermode_on        |
+| powermode_off       |
+|                     |
+
+INPUT
+
+cons = MaxTempature
+var
+
+- on/off function for powermode
+- How would we get a variable with the scope that we will be able to see it
+-
+- make a class attibute for power mode
+- default on
+- function to change it to off
 
 
-INPUT 
+![](pictures/sketch_website.png)
 
-cons = MaxTempature 
-var 
+![](pictures/interface_plan.png)
 
-
-
-- on/off function for powermode 
-- How would we get a variable with  the scope that we will be able to see it 
-- 
-- make a class attibute for power mode 
-- default on 
-- function to change  it to off 
+* changed thermostat  heading to title 
 
 
-Class cat (name)
-attr _reader = :name 
-@name = name 
 
+![](pictures/thermostat:interface.png)
 
-kitty = Cat.new 
-
-kitty.name 
+![](pictures/thermostat:interface_client.png)
