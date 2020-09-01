@@ -2,7 +2,7 @@
 
 In this challenge, you will build the logic needed to model a simple thermostat.
 
-**Increase the temperature**
+**Increase the temperature and use Power Saving Mode**
 ![](pictures/temp_up.gif)
 
 **Decrease the temperature**
