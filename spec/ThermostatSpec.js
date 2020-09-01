@@ -59,6 +59,7 @@ var thermostat;
       expect(thermostat.isMaximumTemperature()).toEqual("MAX_TEMPERATURE_PSM_ON")
     })
 
+
     it('when power saving mode is off and temperature goes above 32 returns true', function() {
       thermostat.changePowerSaveMode()
       thermostat.temperature = 33
@@ -89,6 +90,15 @@ var thermostat;
       thermostat.changePowerSaveMode()
       thermostat.changePowerSaveMode()
       expect(thermostat.powerSaveMode).toEqual(true)
+    })
+
+    it('power saving mode will change temperature to MAX temperature of Power Saving Mode', function(){
+      thermostat.changePowerSaveMode()
+      for( i=0; i < 10; i++){
+        thermostat.upTemperature();
+      }
+      thermostat.changePowerSaveMode()
+      expect(thermostat.temperature).toEqual(25)
     })
 
     it('does not go beyond 25', function(){
