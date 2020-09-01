@@ -1,0 +1,85 @@
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgb(153, 153, 153), #4B0978);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: 50%;
+  height: 100vh;
+  width: 100vw;
+}
+
+#thermostat {
+  font-family: Helvetica;
+  font-size: 4.8em;
+  text-align: center;
+}
+
+#temperature {
+  font-family: Helvetica;
+  font-size: 3.8em;
+  text-align: center;
+  text-align: center;
+  }
+
+  
+
+h2 {
+  font-family: Georgia;
+  font-weight: 100;
+  font-size: 2.0em;
+  text-align: center;
+  margin: 0.5em 0;
+  text-shadow: 0px 1px 2px #301aad, 0px 1px 2px #7bbcd6, 0px 0px 2px #000000,
+    0px 0px 2px #000000;
+}
+
+.temperature-control {
+  font-family: Helvetica;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 0.5em;
+  border-color: #1aafe0;
+  border: solid 2px;
+  font-size: 0.8em;
+  transition: ease-in-out 100ms;
+  box-shadow: #1aafe0 0 0 1em;
+}
+
+
+.low-usage {
+ color: rgb(69, 182, 129)
+}
+
+.medium-usage {
+  color: black;
+}
+.high-usage {
+  color: #b90532;
+}
+
+
+
+#powersaving-button:focus {
+  border-color: #ff0040;
+  box-shadow: #ffa500 0 0 1em;
+}
+
+.world-weather {  
+  padding: 2em;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#temperature-up { 
+  background-color: #ec6565;
+} 
+#temperature-down { 
+  background-color:rgb(79, 88, 192);
+} 
+
