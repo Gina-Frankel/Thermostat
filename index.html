@@ -6,19 +6,38 @@
 <html>
 <title>Thermostat</title>
 </head>
-<body>
+<link rel="stylesheet" href="style.css">
+<h1 id="thermostat"> Thermostat </h1>
+<body id="container" > 
   <section>
+    
     <h1 id="temperature"></h1>
     <p>
-      <button id="temperature-up">+</button>
-      <button id="temperature-down">-</button>
-      <button id="temperature-reset">reset</button>
-      <button id= "powersaving-button"> Power Saver </button>
-
+      <div class="controls">
+      <button class="temperature-control" id="temperature-up">+</button>
+      <button class="temperature-control"id="temperature-down">-</button>
+      <button class="temperature-control"id="temperature-reset">reset</button>
+      <input class="temperature-control" type='button' value='Power Saving Mode Off' id='powersaving-button'>
+    </div>
     </p>
-
-
   </section>
+
+
+  <div class="world-weather">
+    <h2> World Weather: </h2>
+    <h3> Current temperature <span id="current-temperature"></span></h3>
+    <form id="select-city">
+      <input id="current-city" type="text" placeholder="Enter a city"></input>
+      <input type="submit"></input>
+    </form>
+  </section>
+</div>
 </body>
 
 </html>
+
+
+<!--- <button id="thebutton">
+  <span class="ui-button-text">My Text</span>
+</button>
+-->
